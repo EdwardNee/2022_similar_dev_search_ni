@@ -41,3 +41,8 @@ jobs:
       continue-on-error: true
       run: |
         python3 -m pytest tests/code_parser/test_tree_sitter_parser.py
+        
+    - name: Run tests and collect coverage
+      run: pytest --cov .
+    - name: Upload coverage reports to Codecov
+      run: |
