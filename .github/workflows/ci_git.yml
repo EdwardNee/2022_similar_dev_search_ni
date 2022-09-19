@@ -1,6 +1,8 @@
 name: ci_git
 
-on: [push, pull_request]
+on:
+  - push
+  - pull_request
 
 jobs:
   build:
