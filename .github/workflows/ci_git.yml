@@ -45,7 +45,7 @@ jobs:
         python3 -m pytest tests/code_parser/test_tree_sitter_parser.py
     - name: Run tests and collect coverage
       run: |
-        python3 -m pytest --cov tests/extractor/test_extract.py
+        python3 -m pytest --cov .
     - name: Codecov run
       uses: codecov/codecov-action@v3.1.1
 
