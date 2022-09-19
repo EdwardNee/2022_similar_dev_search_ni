@@ -13,7 +13,7 @@ def get_content(path: str) -> str:
     :return: Returns read lines.
     """
 
-    with open(path, 'r') as fp:
+    with open(path, "r") as fp:
         return fp.read()
 
 
@@ -36,15 +36,17 @@ def get_languages_method(path: str) -> List[str]:
     return result
 
 
-def process_list(list_commits: List[Dict]) -> List[Dict]:
+def classify_languages(list_commits: List[Dict]) -> List[Dict]:
     """
     Sets to each element in list_commits list of languages.
 
     :param list_commits: List of mapped commits info.
 
-    :return:  List of dictionaries that adds to given dicts a key with languages.
+    :return:  List of dictionaries that adds to given dicts a key with
+    languages.
     """
 
     for change in list_commits:
-        change["lang"] = get_languages_method(change["path"]) if "path" in change.keys() else []
+        change["lang"] = get_languages_method(
+            change["path"]) if "path" in change.keys() else []
     return list_commits
