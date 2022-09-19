@@ -1,6 +1,8 @@
 name: ci_git
 
-on: [push, pull_request]
+on:
+  - push
+  - pull_request
 
 jobs:
   build:
@@ -41,7 +43,9 @@ jobs:
       continue-on-error: true
       run: |
         python3 -m pytest tests/code_parser/test_tree_sitter_parser.py
-        
+    - name: Run tests and collect coverage
+      run: |
+        python3 -m pytest --cov .
     - name: Codecov run
       uses: codecov/codecov-action@v3.1.1
 
