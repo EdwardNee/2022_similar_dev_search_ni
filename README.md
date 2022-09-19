@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/github/codecov/example-java-maven/branch/main/graph/badge.svg?token=ob1cArXXM6)](https://app.codecov.io/github/EdwardNee/2022_similar_dev_search_ni)
+
 # Курс "Code as Data"  
 
 ## Содержание и примерный план  
