@@ -42,7 +42,6 @@ jobs:
       run: |
         python3 -m pytest tests/code_parser/test_tree_sitter_parser.py
         
-    - name: Run tests and collect coverage
-      run: pytest --cov .
-    - name: Upload coverage reports to Codecov
-      run: |
+    - name: Codecov run
+      uses: codecov/codecov-action@v3.1.1
+
