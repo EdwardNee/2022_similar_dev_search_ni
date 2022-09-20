@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/github/codecov/example-java-maven/branch/main/graph/badge.svg?token=ob1cArXXM6)](https://app.codecov.io/github/EdwardNee/2022_similar_dev_search_ni)
+[![codecov](https://codecov.io/gh/EdwardNee/2022_similar_dev_search_ni/branch/main/graph/badge.svg)](https://codecov.io/gh/EdwardNee/2022_similar_dev_search_ni)
 
 # Курс "Code as Data"  
 
